@@ -1,0 +1,110 @@
+/** @file
+ * Style sheet for step assignments
+ */
+div.cl-steppage div.cl-step-sections > div {
+  -moz-box-shadow: 3px 3px 8px #ccc;
+  -webkit-box-shadow: 3px 3px 8px #ccc;
+  box-shadow: 3px 3px 8px #ccc; }
+
+div.cl-steppage div.cl-step-sections {
+  position: relative;
+  clear: both;
+  padding-left: 3pt;
+  padding-right: 3pt;
+  margin-bottom: 1em; }
+  div.cl-steppage div.cl-step-sections h2 {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    border-bottom: 0;
+    padding: 0;
+    margin: 0 5pt -3px 5pt; }
+    div.cl-steppage div.cl-step-sections h2 a {
+      color: #222222;
+      text-decoration: none; }
+  div.cl-steppage div.cl-step-sections > div {
+    background-color: #dce2df;
+    border: 1px solid black;
+    border-radius: 3pt;
+    margin: 0px 1px 1px 1px;
+    padding: 20px; }
+    div.cl-steppage div.cl-step-sections > div p {
+      color: black; }
+    div.cl-steppage div.cl-step-sections > div p:first-child {
+      margin-top: 0; }
+div.cl-steppage tr:hover td {
+  background-color: #eeeeee; }
+div.cl-steppage td.stepcheck {
+  text-align: center;
+  width: 45px; }
+div.cl-steppage tr.cl-checkpoint td {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0; }
+
+div.cl-stepnav-div {
+  min-height: 35px; }
+  div.cl-stepnav-div nav {
+    /* Tool tips */ }
+    div.cl-stepnav-div nav ul li {
+      position: relative;
+      border: 0;
+      padding: 5px 8px 0 8px;
+      height: 35px; }
+    div.cl-stepnav-div nav input[type=image], div.cl-stepnav-div nav nav a img {
+      padding: 0;
+      border: 0;
+      margin: 0; }
+    div.cl-stepnav-div nav a {
+      position: relative;
+      /*this is the key*/
+      z-index: 24;
+      text-decoration: none; }
+    div.cl-stepnav-div nav a:hover {
+      z-index: 25; }
+    div.cl-stepnav-div nav a span {
+      display: none; }
+    div.cl-stepnav-div nav a:hover span {
+      /*the span will display just on :hover state*/
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 10px;
+      width: 15em;
+      border: 1px solid black;
+      background-color: #BBFFBD;
+      color: #000;
+      padding: 0 1em;
+      text-align: center;
+      font-size: 10pt; }
+    div.cl-stepnav-div nav .skype {
+      font-size: 9px;
+      text-align: center; }
+    div.cl-stepnav-div nav .skype a:link, div.cl-stepnav-div nav .skype a:visited {
+      color: white; }
+  div.cl-stepnav-div li.cl-step-progress {
+    position: relative;
+    border: 0;
+    margin: 0;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media only screen and (max-width: 750px) {
+      div.cl-stepnav-div li.cl-step-progress {
+        display: none; } }
+    div.cl-stepnav-div li.cl-step-progress canvas {
+      vertical-align: middle; }
+    div.cl-stepnav-div li.cl-step-progress div {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      z-index: 25;
+      border: 1px solid black;
+      background-color: #BBFFBD;
+      color: #000;
+      padding: 0 1em;
+      text-align: center;
+      min-width: 15em;
+      white-space: nowrap; }
